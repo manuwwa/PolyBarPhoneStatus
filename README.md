@@ -1,5 +1,14 @@
 # PolyBarPhoneStatus
 PolyBar Phone status using home assistant api
+
+# Prerequisites
+1. PolyBar
+2. FontAvesome 
+Installation in Arch :
+```
+yay -S ttf-font-awesome
+```
+
 # Installation
 1. Clone the repository
 2. copy homeAssistant_default.json to homeAssistant.json and edit file:
