@@ -2,7 +2,7 @@
 PolyBar Phone status using home assistant api
 # Installation
 1. Clone the repository
-2. Setup homeAssistant.json file:
+2. copy homeAssistant_default.json to homeAssistant.json and edit file:
     1. Get home assistant token and set the token value in homeAssistant.json
     2. Set home assistant url
     3. Set batery level entity id
