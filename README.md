@@ -33,7 +33,7 @@ yay -S ttf-font-awesome
       [module/phoneStatus]
       type = custom/script
       exec = ~/.config/polybar/phoneStatus.py
-      interval = 300
+      interval = 2
       format= <label>
       ```
     3. Add module (example modules-right)
