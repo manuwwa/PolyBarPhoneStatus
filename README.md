@@ -8,6 +8,8 @@ Installation in Arch :
 ```
 yay -S ttf-font-awesome
 ```
+3. Home assistand instance
+4. Phone app for home assistant configured to send phone battery status
 
 # Installation
 1. Clone the repository
