@@ -18,16 +18,20 @@ headers = {
 conn.request("GET", "/api/states/"+fileData["bateryLevelEntityId"], payload, headers)
 
 res = conn.getresponse()
-data = res.read()
-state = json.loads(data)["state"]
+respCode = res.status
+if respCode != 200:
+    print("\uf3cd\uf056")
+else:
+    data = res.read()
+    state = json.loads(data)["state"]
 
-conn.request("GET", "/api/states/"+fileData["batteryStatusEntityyId"], payload, headers)
+    conn.request("GET", "/api/states/"+fileData["batteryStatusEntityyId"], payload, headers)
 
-res = conn.getresponse()
-data = res.read()
-charging = json.loads(data)["state"]
+    res = conn.getresponse()
+    data = res.read()
+    charging = json.loads(data)["state"]
 
-if charging == "charging":
-    print("\uf3cd\uf0e7 {:,d}%".format(int(state)))
-else :
-    print("\uf3cd {:,d}%".format(int(state)))    
+    if charging == "charging":
+        print("\uf3cd\uf0e7 {:,d}%".format(int(state)))
+    else :
+        print("\uf3cd {:,d}%".format(int(state)))    
